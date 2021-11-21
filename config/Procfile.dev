@@ -1,0 +1,2 @@
+server: sh -c 'bundle exec rackup'
+watch: sh -c 'bundle exec guard -i'

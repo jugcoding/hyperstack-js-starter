@@ -1,3 +1,6 @@
+/dist
+/README.md.tmp
+/.ruby-version
 *.gem
 *.rbc
 /.config
