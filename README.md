@@ -20,11 +20,27 @@ This Starter Kit is a port of the hyperstack [TodoMVC Tutorial Part I](https://d
 - **instant compilation + livereload**
   - via [guard-rake](https://github.com/rubyist/guard-rake), [guard-livereload](https://github.com/guard/guard-livereload), [rack-livereload](https://github.com/johnbintz/rack-livereload)
 ### How to use
+#### Prerequisites
+Example from a fresh Ubuntu 20.04 :
+
+1. Install rbenv ([see here](https://github.com/rbenv/rbenv-installer#rbenv-installer))
+2. install ruby 2.7.4 :
+```shell
+sudo apt-get update
+sudo apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf
+sudo apt install bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
+rbenv install 2.7.4
+rbenv global 2.7.4
+gem install bundler:2.2.5
+```
+3. install nodejs 16.13.0 ([see here](https://github.com/nodesource/distributions/blob/master/README.md#debinstall))
+
+
 #### Installation
 ```shell
 git clone https://github.com/jugcoding/hyperstack-js-starter
 cd ./hyperstack-js-starter
-bundle install
+bundle install --path vendor/bundle
 ```
 
 #### Development
