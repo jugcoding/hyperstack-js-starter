@@ -19,7 +19,7 @@ This Starter Kit is a port of the hyperstack [TodoMVC Tutorial Part I](https://d
   - You can of course use your favorite packer if it make sens for you.
 - **instant compilation + livereload**
   - via [guard-rake](https://github.com/rubyist/guard-rake), [guard-livereload](https://github.com/guard/guard-livereload), [rack-livereload](https://github.com/johnbintz/rack-livereload)
-### How to use
+### Installation
 #### Prerequisites
 Example from a fresh Ubuntu 20.04 :
 
@@ -36,14 +36,14 @@ gem install bundler:2.2.5
 3. install nodejs 16.13.0 ([see here](https://github.com/nodesource/distributions/blob/master/README.md#debinstall))
 
 
-#### Installation
+#### The starter
 ```shell
 git clone https://github.com/jugcoding/hyperstack-js-starter
 cd ./hyperstack-js-starter
-bundle install --path vendor/bundle
+bundle install
 ```
 
-#### Development
+### Development
 ```shell
 rake rebuild ## only once
 rake server
@@ -52,7 +52,7 @@ rake server
 - To test the site : visit [http://localhost:9292/](http://localhost:9292/)
 - To test LiveReload : make some change in the app (files under ./app)
 
-#### Production
+### Production
 ```shell
 rake PROD=true rebuild
 rake PROD=true server
@@ -60,7 +60,7 @@ rake PROD=true server
 
 The generated static site for prod is located in ./dist/prod/
 
-#### Other rake tasks
+### Other rake tasks
 
 ```shell
 rake cdn             # download cdn files
